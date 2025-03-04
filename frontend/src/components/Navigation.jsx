@@ -7,33 +7,38 @@ function Navigation(){
                 <a href="/" className="text-2xl font-bold italic font-serif">
                     Gym Guru
                 </a>
-            <div className="hidden md:flex space-x-6">
+                <div className="hidden md:flex space-x-6">
                 <a href={`/`} className="transition-colors">
+                    Home
+                </a>
+            </div>
+            <div className="hidden md:flex space-x-6">
+                <a href={`/dashboard`} className="transition-colors">
                     DashBoard
                 </a>
             </div>
             <div className="hidden md:flex space-x-6">
-                <a href={`/`} className="transition-colors">
+                <a href={`/workout`} className="transition-colors">
                     WorkOut
                 </a>
             </div>
             <div className="hidden md:flex space-x-6">
-                <a href={`/`} className="transition-colors">
+                <a href={`/tutorials`} className="transition-colors">
                     Tutorials
                 </a>
             </div>
             <div className="hidden md:flex space-x-6">
-                <a href={`/`} className="transition-colors">
+                <a href={`/Blog`} className="transition-colors">
                     Blog
                 </a>
             </div>
             <div className="hidden md:flex space-x-6">
-                <a href={`/`} className="transition-colors">
+                <a href={`/challenges`} className="transition-colors">
                     Challenge
                 </a>
             </div>
             <div className="hidden md:flex space-x-6">
-                <a href={`/`} className="transition-colors">
+                <a href={`/contact`} className="transition-colors">
                     Contact
                 </a>
             </div>

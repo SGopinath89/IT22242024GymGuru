@@ -1,8 +1,8 @@
-function ChallengPage(){
+function Challenge(){
     return(
         <>
-        
+        <h1>Hi</h1>
         </>
     );
 }
-export default ChallengPage;
+export default Challenge;

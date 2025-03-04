@@ -1,13 +1,12 @@
 import Navigation from "@/components/Navigation";
 import ex1 from '../assets/ex1.jpg'; 
-import Button from "@/Button";
+import { Button } from "@/components/ui/button";
 import PopupAnimation from "@/components/popupText";
 
 
 function Blog() {
   return (
     <>
-      <Navigation />
       <div className="mt-6">
         <h1 className="text-4xl text-black text-center">Blogs</h1>
       </div>
