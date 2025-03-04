@@ -12,16 +12,13 @@ function Homepage() {
       Gym Guru is your all-in-one fitness companion, offering personalized workout plans, progress tracking tools, and expert guidance to help you reach your fitness goals. Whether you're new to fitness or aiming to elevate your workouts, it supports muscle building, fat loss, and a healthier lifestyle with nutrition advice, recovery tips, and mental wellness strategies. Get ready to achieve your best self with Gym Guru!<br></br>
       </p>
       <center>
-  <p className="mt-6 font-bold text-3xl text-black mr-30">
-    To get started, please sign up first! 
-    <Button className="bg-green-500 text-white font-bold py-2 px-4 text-xl">
-      Click here
-    </Button>
-  </p>
-</center>
-
-
-
+       <p className="mt-6 font-bold text-3xl text-black mr-30">
+        To get started, please sign up first! 
+        <Button className="bg-green-500 text-white font-bold py-2 px-4 text-xl">
+         Click here
+        </Button>
+        </p>
+      </center>
       </header>
 
       <section className="flex-1 px-6 py-12 text-center">
