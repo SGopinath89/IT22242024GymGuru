@@ -1,9 +1,8 @@
-import { Globe } from "lucide-react";
 import { Button } from "./ui/button";
 
 function Navigation(){
     return(
-        <nav className="z-10 bg-green-900 flex item-center jusify-between px-8 text-white py-4">
+        <nav className="z-10 bg-gray-800 flex item-center jusify-between px-8 text-white py-4">
             <div className="flex items-center space-x-8">
                 <a href="/" className="text-2xl font-bold italic font-serif">
                     Gym Guru
