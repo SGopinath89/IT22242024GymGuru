@@ -30,11 +30,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
-      <h1 className="text-4xl text-black text-center mb-6">Contact Us</h1>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 py-2 px-2" >
+      <h1 className="text-4xl text-black text-center mb-5">Contact Us</h1>
       <Form {...form}>
-        <form className="w-1/2 bg-white p-8 rounded-lg shadow-lg" onSubmit={form.handleSubmit(handleSubmit)}>
-          <div className="grid gap-4">
+        <form className="w-3/4 md:w-1/3 lg:w-1/2 bg-white p-6 rounded-lg shadow-lg space-y-2" onSubmit={form.handleSubmit(handleSubmit)}>
+          <div className="grid gap-8">
             <FormField
               control={form.control}
               name="name"
@@ -68,7 +68,7 @@ const Contact = () => {
                 <FormItem>
                   <FormLabel>Message</FormLabel>
                   <FormControl>
-                    <Textarea placeholder="Message" {...field} />
+                    <Textarea placeholder="Message" className="h-36" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -76,7 +76,7 @@ const Contact = () => {
             />
           </div>
 
-          <div className="mt-4 text-center">
+          <div className="mt-10 text-center">
             <Button type="submit">Send message</Button>
           </div>
         </form>

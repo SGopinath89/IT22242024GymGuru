@@ -1,9 +1,10 @@
 import { Button } from "./ui/button";
-
-function Navigation(){
+import navimage from '../assets/navimage.png';
+function Navigation(){ 
     return(
-        <nav className="z-10 bg-gray-800 flex item-center jusify-between px-8 text-white py-4">
+        <nav className="z-20 bg-gray-800 flex item-center jusify-between px-8 text-white py-4">
             <div className="flex items-center space-x-8">
+            <img src={navimage} alt="Building Body" width="40" height="40" />
                 <a href="/" className="text-2xl font-bold italic font-serif">
                     Gym Guru
                 </a>
