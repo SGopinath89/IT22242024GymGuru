@@ -3,6 +3,7 @@ import bodybuilding from '../assets/bodybuilding.png';
 import rescheduling from '../assets/rescheduling.png';
 import graph from '../assets/graph.png';
 import trophy from '../assets/trophy.png';
+import { Link } from "react-router";
 
 function Homepage() {
   return (
@@ -17,9 +18,11 @@ function Homepage() {
           <center>
             <p className="mt-6 font-bold text-2xl text-black">
               To get started, please sign up first! 
+              <Link to="/sign-in">
               <Button className="bg-black text-white font-bold py-2 px-4 text-xl ml-3">
                Click here
               </Button>
+              </Link>
             </p>
           </center>
         </header>

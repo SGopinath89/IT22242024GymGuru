@@ -1,13 +1,10 @@
-import Navigation from "@/components/Navigation";
-import ex1 from '../assets/ex1.jpg'; 
 import backSquart from '../assets/backSquart.png'; 
 import LatPullDown from '../assets/LatPullDown.png'; 
 import LegSquart from '../assets/LegSquart.png';
 import SholderPress from '../assets/SholderPress.png'; 
 import Crunchers from '../assets/Crunchers.png';
+import { Link } from "react-router";
 import { Button } from "@/components/ui/button";
-import PopupAnimation from "@/components/popupText";
-
 const exerciseData = [
   {
     title: "Back squat",
@@ -41,9 +38,12 @@ const exerciseData = [
 function Blog() {
   return (
     <>
-      <div className="mt-6">
-        <h1 className="text-4xl text-black text-center">Blogs</h1>
-      </div>
+      <div className="mt-6 mb-6 flex items-center justify-between">
+        <h1 className="text-4xl text-black text-center flex-1">Blogs</h1>
+        <Link to="/workout" className="mr-4">
+        <Button>Lets practise</Button>
+        </Link>
+        </div>
 
       {exerciseData.map((exercise, index) => (
         <div key={index} className="mt-5">

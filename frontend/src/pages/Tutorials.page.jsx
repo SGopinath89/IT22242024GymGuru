@@ -6,6 +6,7 @@ import LatPullDown from '../assets/LatPullDown.png';
 import LegSquart from '../assets/LegSquart.png';
 import SholderPress from '../assets/SholderPress.png'; 
 import Crunchers from '../assets/Crunchers.png';
+import { Link } from "react-router";
 
 const exercises = [
   {
@@ -68,6 +69,15 @@ const exercises = [
 function Tutorial() {
   return (
     <>
+      <header className="bg-blue-700 text-white py-5 pl-6">
+  <h1 className="text-2xl  mb-4">Before Practicing Exercise</h1>
+  <ul className="text-yellow-400 text-lg  space-y-2 pl-4">
+    <li>➤ Drink water before exercise.</li>
+    <li>➤ Practice exercises in the correct position.</li>
+    <li>➤ Warm up before starting.</li>
+  </ul>
+</header>
+
       <div className="mt-6">
         <h1 className="text-4xl text-black text-center">Tutorials</h1>
       </div>
@@ -87,7 +97,9 @@ function Tutorial() {
             <div className="absolute right-5 top-1/2 transform -translate-y-1/2 mr-10 flex flex-col items-center">
               <PopupAnimation />
               <div className="mt-4"> {/* Adding margin top for space */}
+              <Link to="/workout">
                 <Button>Click here</Button>
+                </Link>
               </div>
             </div>
           </div>

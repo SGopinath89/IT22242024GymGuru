@@ -1,9 +1,14 @@
+import { Link } from "react-router";
+import { Button } from "@/components/ui/button";
 function DashBoard(){
     return(
         <>
-        <div className="mt-6 mb-6">
-        <h1 className="text-4xl text-black text-center">DashBoard</h1>
-      </div>
+        <div className="mt-6 mb-6 flex items-center justify-between">
+        <h1 className="text-4xl text-black text-center flex-1">DashBoard</h1>
+        <Link to="/workout" className="mr-4">
+        <Button>Lets parctise</Button>
+        </Link>
+        </div>
          <div>
         <div className="grid grid-cols-3 gap-6 p-4 w-full max-w-h-screen-xxl">
           {/* Row 1 */}

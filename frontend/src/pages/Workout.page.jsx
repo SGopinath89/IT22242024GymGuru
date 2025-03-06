@@ -8,6 +8,7 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router";
 import {
   Form,
   FormControl,
@@ -35,9 +36,12 @@ function Workout() {
 
   return (
     <>
-      <div className="mt-6 mb-6">
-        <h1 className="text-4xl text-black text-center">WorkOut</h1>
-      </div>
+      <div className="mt-6 mb-6 flex items-center justify-between">
+        <h1 className="text-4xl text-black text-center flex-1">Workout</h1>
+        <Link to="/workout" className="mr-4">
+        <Button>Lets parctise</Button>
+        </Link>
+        </div>
       <div className="container mx-auto mt-5 px-5 mb-5">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {workouts.map((workout, index) => {
@@ -52,9 +56,10 @@ function Workout() {
             };
 
             return (
+              
               <div 
                 key={index}
-                className="w-full h-[300px] bg-gray-100 border-2 border-gray-400 flex items-start"
+                className="w-full h-[320px] bg-gray-100 border-2 border-gray-400 flex items-start"
               >
                 <img 
                   src={workout.image} 
@@ -117,7 +122,15 @@ function Workout() {
                       </div>
                     </form>
                   </Form>
-                </div>
+                  <div className="flex space-x-6 mt-3 ml-9 mt-5">
+                  <Link to="/tutorials" className="font text-yellow-900 ">
+                     How to practise 
+                   </Link>
+                  <Link to="/blog" className="font text-yellow-900 ">
+                   Read more....
+                  </Link>
+                  </div>
+                 </div>
               </div>
             );
           })}
