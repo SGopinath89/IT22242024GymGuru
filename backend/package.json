@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/VistaStay/VistaStay--Backend#readme",
+  "bugs": {
+    "url": "https://github.com/VistaStay/VistaStay--Backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VistaStay/VistaStay--Backend.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongodb": "^6.13.1",
+    "mongoose": "^8.10.1",
+    "nodemon": "^3.1.9"
+  }
+}
