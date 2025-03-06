@@ -1,9 +1,8 @@
-//password
-//fXHqCM6NYRHwFZ82
+//Password
+//N7hXVeE3gA1mnLay
 
-//string
-//mongodb+srv://sharadakanchana417:fXHqCM6NYRHwFZ82@hotelapp.1veed.mongodb.net/?retryWrites=true&w=majority&appName=HotelApp
-
+//String
+//mongodb+srv://sharadakanchana417:N7hXVeE3gA1mnLay@gymguru.y3wxq.mongodb.net/?retryWrites=true&w=majority&appName=GymGuru
 import mongoose from "mongoose";
 
 const connectDB = async () => {
