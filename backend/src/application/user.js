@@ -1,21 +1,28 @@
-// import User from "../infastructure/schemas/User.js";
+import User from "../infastructure/schemas/User.js";
 
-// export const createUser = async (req, res) => {
-//   const user = req.body;
+// Create User
+export const createUser = async (req, res) => {
+  const user = req.body;
 
-//   // Validate the request data
-//   if (!user.name || !user.email) {
-//     res.status(400).send();
-//     return;
-//   }
+  if (!user.name || !user.email || !user.password) {
+    return res.status(400).send({ message: "Name , email and password are required" });
+  }
 
-//   // Add the user
-//   await User.create({
-//     name: user.name,
-//     email: user.email,
-//   });
+  await User.create({
+    name: user.name,
+    email: user.email,
+    password:user.password,
+  });
 
-//   // Return the response
-//   res.status(201).send();
-//   return;
-// };
+  return res.status(201).send({ message: "User created successfully" });
+};
+
+// Get All Users
+export const getAllUsers = async (req, res) => {
+  try {
+    const users = await User.find(); // Fetch all users
+    return res.status(200).json(users);
+  } catch (error) {
+    return res.status(500).send({ message: "Error fetching users" });
+  }
+};
